@@ -2,8 +2,6 @@ const Native1 = {
   mounted() {
     userAgent = navigator.userAgent;
 
-    // document.getElementById("log").textContent = userAgent;
-
     if (/Android/.test(userAgent)) {
       document.getElementById("android-ver").textContent =  window.Android.sample1();
     } else if (/Mac/.test(userAgent)) {
